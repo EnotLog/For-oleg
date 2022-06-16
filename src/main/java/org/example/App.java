@@ -36,21 +36,21 @@ public class App extends Application {
        button.setLayoutY(180);
        pane.getChildren().add(button);
 
+
+
        Button button1 = new Button();
        button1.setText("No((");
        button1.setLayoutX(350);
        button1.setLayoutY(180);
        pane.getChildren().add(button1);
 
-        button.setOnMouseClicked(e -> {
-           label.setText("I know it)))");
-        });
+        button.setOnMouseClicked(e -> label.setText("I know it)))"));
 
         button1.setOnMouseClicked(e -> {
             Random random = new Random();
             int rand = random.nextInt(600);
             int rand2 = random.nextInt(400);
-            int rand3 = random.nextInt(3);
+            int rand3 = random.nextInt(4);
             button1.setLayoutX(rand);
             button1.setLayoutY(rand2);
             label.setText("that's lie) ");
